@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome para el ícono de estado -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">
+            Chat Boot Matemàtico
+        </h1>
+        <div class="robot-container">
+            <img src="img/robot.png" alt="Robot" class="robot-img">
+        </div>
+        <div id="chat-container" class="chat-container hidden">
+            <div id="chat-header" class="chat-header">
+                <div class="chat-title">Chat de Ayuda</div>
+                <div class="chat-close"><i class="fas fa-times"></i></div> <!-- Botón para cerrar el chat -->
+            </div>
+            <div id="chat-messages" class="chat-messages"></div>
+            <div id="chat-input" class="chat-input">
+                <input type="text" id="message-input" placeholder="Escribe tu mensaje...">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button id="start-btn">Empezar</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
